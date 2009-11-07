@@ -1,0 +1,93 @@
+NIMH Labs
+
+Antioche's Desktop Environment
+------------------------------
+
+ADE is a desktop environment meant to be based around a resource lite 
+QT4 arrangement. ADE's goal is to be able to run a feature intensive QT4 
+desktop on various older computer systems.
+
+ADE is not a Window Manager. ADE generally is to be ran ontop of another 
+WM such as Openbox, Fluxbox, Metacity, Enlightenments' Window Manager, 
+Compiz, KWin, etc. It should be noted that we do not currently plan to 
+support Rat Poison. That would seem to be a form of lunacy in our regards.
+
+ADE based on our definition of Desktop Environment is merely a set of 
+software designed to run together and interact. Any such requirements to 
+render and update windows are the job of the toolkits, WM and implementation
+of the X11 server.
+
+We are merely adding to the list of DE (~7..11) that are available and not 
+the list of WM (>9000). This needs to be noted.
+
+Since this will be done using QT4--most colour schemes/themes that use QT4 
+type systems and ideas should work just fine with ADE.
+
+Current planned components of ADE
+
+ADE Navigation Panel:
+The is where everything is grabbed and launched in ADE. It is the corner 
+stone for this Desktop Environment, The ADE Navigation Panel prolly can 
+be best thought of as several navigation panels. The main one allows you 
+to grab a Navigation Panel based on files on various mediums in the computer.
+Another allows you to open files based on the psuedo medium of your 
+application menu. Another allows you to go to certain workspaces, and 
+interact with various windows in those work spaces. Most DEs would end up 
+having these as a menu of some form. This mostly just opens them up as a new 
+taskbar or iconlist.
+
+ADE Dynamic Workspaces
+One of ADE's goals is to ease workspace management. Rather than having a 
+specific set of Workspaces defined, ADE takes the idea that a Workspace is 
+simply a group of similarly themed Applications. So Workspaces/Groups will 
+be made on the fly. A user can take a Window and tell it that it is part of 
+a new group of some name. When a group is empty, the group will be removed.
+
+ADE File Browser
+Sometimes, using the ADE Navigation Panel may not be the best manner to go 
+through the files on the user's system. This provides an alternative.
+
+ADE Web Browser
+This is simply meant to be a lighter Web Browser for use with ADE. Making use 
+of Webkit and some form of ECMAscript interpretor that has yet to be decided.
+Tabs for ADE Web Browser will register themselves onto the ADE Navigation 
+Panel if currently in ADE. Otherwise, it will simply note the tabs inside the 
+ADE Window. ADE Web Browser will mostly take hints and ideas from the UI work 
+in Chromium.
+
+We may also allow for scripting to be available in ADE via Mono, the JVM and 
+Parrot.
+
+ADE Terminal
+
+Not much planned here. Still trying to figure out this one for what we will 
+be doing. We may simply just use Konsole until we can figure out something 
+better.
+
+ADE Network Systems
+
+ADE is capable of associating Network mediums with local mediums. Generally 
+being setup to see a system accessible via SSH or FTP as looking like 
+something that is local to the computer ADE is on. ADE will be set up to 
+eventually be able to understand Gopher, Archie and Telnet based filesystems 
+in the future.
+
+ADE Mount Manager
+
+ADE will also have a local mount manager that will handle mounting of any 
+system that the local system has the knowledge to properly mount.
+
+ADE Network Manager
+
+ADE will also have a form of Network Manager. Most likely a port of the other 
+forms of Network Managers.
+
+ADE Software System
+
+ADE will be able to make use of Yum and Apt based libraries. ADE will also 
+have its own software distribution system for media to be used within ADE. We 
+have no plans to replace either Yum or Apt at this time. At best, compliment 
+them, in a manner similar to CPAN or GEM.
+
+Note: ADE plans to have a future ability to keep track of software purchases 
+using ADE.
